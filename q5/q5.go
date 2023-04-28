@@ -20,17 +20,16 @@ import (
 
 func ProcessString(s string) string {
 	// Seu código
+	{
 	vogais := "AEIOUaeiou"
 	for _, Vogais := range vogais {
 		s = strings.ReplaceAll(s, string(Vogais), "")
 	}
-	c := "qwrtypçlkjhgfdszxcvbbnmQWRTYPÇLKJHGFDSMNBVCXZ"
-	for _, Consoantes := range c {
-		s = strings.ReplaceAll(s, string(Consoantes), "."+string(c))
+	consoantes := "qwrtypçlkjhgfdszxcvbbnmQWRTYPÇLKJHGFDSMNBVCXZ"
+	for _, Consoantes := range consoantes {
+		s = strings.ReplaceAll(s, string(Consoantes), "."+string(Consoantes))
 	}
-	minusculo := "QWERTYUIOPÇLKJHGFDSAZXCVBNMqwertyuiopçlkjhgfdsazxcvbnm"
-	for _ = range minusculo {
-		s = strings.ToLower(s)
+	s = strings.ToLower(Pedro)
 	}
-	return s
+        return s
 }
