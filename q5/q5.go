@@ -29,7 +29,7 @@ func ProcessString(s string) string {
 	for _, Consoantes := range consoantes {
 		s = strings.ReplaceAll(s, string(Consoantes), "."+string(Consoantes))
 	}
-	s = strings.ToLower(Pedro)
+	s = strings.ToLower(s)
 	}
         return s
 }
