@@ -1,5 +1,7 @@
 package q1
 
+import "fmt"
+
 //Em um dia quente de verão, Pete e seu amigo Billy decidiram comprar uma melancia. Eles escolheram a maior e mais
 //saborosa, na opinião deles, e, em seguida, pesaram a fruta nas balanças, obtendo seu peso em quilos. Morrendo de sede,
 //correram para casa com a melancia e decidiram dividi-la. No entanto, enfrentaram um problema difícil.
@@ -15,5 +17,13 @@ package q1
 
 func DivideWatermelon(weight int) (bool, error) {
 	// Seu código aqui
+	if weight <= 0 {
+		return false, fmt.Errorf("Não existe melancia assim")
+	} else if weight == 2 {
+		return false, fmt.Errorf("Não pode ser divida em dois pedaços pares")
+	} else if weight%2 == 0 {
+		return true, fmt.Errorf("É divisivel em duas fatias pares")
+	}
+
 	return false, nil
 }
